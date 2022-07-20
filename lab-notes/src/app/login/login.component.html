@@ -1,0 +1,23 @@
+
+<div class="container-login d-flex align-items-center justify-content-center">
+<div class="section-login d-flex flex-column">
+    <div class="card text-center w-25 px-30">
+        <div class="card-header">
+            <b>LOGIN</b>
+        </div>
+   <div class="card-body p-4">
+
+    <label style="float: left;">Email</label>
+    <input class="form-control m2" type="email" placeholder="ingrese su correo"[(ngModel)]='usuario.email'>
+
+    <label style="float: left;">Contraseña</label>
+    <input class="form-control m2" type="password" placeholder="ingrese su contraseña"[(ngModel)]='usuario.password'>
+
+    <button class="btn btn-primary btn-block m-2"(click)='Ingresar()'>Ingresar</button>
+    <button class="btn btn-info btn-block m-2"(click)='IngresarConGoogle()'>Ingresar con Google</button>
+    <label>Aun no tienes cuenta?<a href="/register"> Registrarse</a></label>
+    </div>
+
+    </div>
+</div>
+  </div>
